@@ -1,0 +1,139 @@
+.card_hsk {
+    width: 100%;
+    height: auto;
+    padding: 40px 10px;
+    background-color: rgb(243, 210, 139);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    button {
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        font-size: 18px;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .write {
+        top: 5px;
+        right: 5px;
+        color: rgb(212, 121, 2);
+    }
+
+    .rewrite {
+        top: 5px;
+        left: 5px;
+        color: rgb(28, 3, 173);
+    }
+
+    .check_success{
+        bottom: 5px;
+        left: 5px;
+        color: rgb(2, 133, 2);
+    }
+
+    .check_defeat{
+        bottom: 5px;
+        right: 5px;
+        color: red;
+    }
+
+    .read_hanzi{
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .example_btn{
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card_pinyin {
+        font-size: 17px;
+    }
+
+    .card_vocabulary {
+        font-size: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .character_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.card_hsk.selected_ok{
+    background-color: rgb(116, 207, 24);
+}
+
+.card_hsk.selected_no{
+    background-color: rgb(104, 182, 235);
+    color: #fff;
+}
+
+
+.card_example {
+    position: fixed; 
+    background-color: rgb(255, 160, 97);
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    max-height: 90vh;
+    overflow: auto;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+
+    .hanzi_example, .example, .pinyin_example, .mean_example{
+        text-align: center;
+    }
+
+    .hanzi_example{
+        font-size: 30px;
+    }
+
+    .close_btn{
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        top: 5px;
+        right: 5px;
+        color: rgb(173, 47, 1);
+    }
+
+    .example{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .pinyin_example{
+        color: #636161;
+    }
+
+    .read_hanziexp{
+        position: absolute;
+        background-color: transparent;
+        border: 0;
+        top: 5px;
+        left: 5px;
+    }
+}
