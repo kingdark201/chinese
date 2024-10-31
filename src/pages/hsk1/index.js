@@ -102,13 +102,13 @@ function Hsk1() {
         className="search-input"
       />
       <div>
-        <button className='status_pinyin' onClick={() => setPinyinMode(!pinyinMode)}>
+        <button className={`status_pinyin ${!pinyinMode ? 'bg-primary': ''}`} onClick={() => setPinyinMode(!pinyinMode)}>
           <i className="bi bi-exclamation-circle"></i>
         </button>
-        <button className='status_hanzi' onClick={() => setHanziMode(!hanziMode)}>
+        <button className={`status_hanzi ${!hanziMode ? 'bg-warning': ''}`} onClick={() => setHanziMode(!hanziMode)}>
           <i className="bi bi-spellcheck"></i>
         </button>
-        <button className='status_mean' onClick={() => setMeanMode(!meanMode)}>
+        <button className={`status_mean ${!meanMode ? 'bg-secondary': ''}`} onClick={() => setMeanMode(!meanMode)}>
           <i className="bi bi-droplet-fill text-primary"></i>
         </button>
       </div>

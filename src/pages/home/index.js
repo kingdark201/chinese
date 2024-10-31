@@ -24,7 +24,7 @@ function HomePage() {
         <Link to={ROUTERS.HSK2} className='box-hsk'>
           <h6 className='pt-1'>Từ vựng HSK2</h6>
         </Link>
-        <Link className='box-hsk'>
+        <Link to={ROUTERS.HSK3} className='box-hsk'>
           <h6 className='pt-1'>Từ vựng HSK3</h6>
         </Link>
         <Link className='box-hsk' onClick={() => setGuide(!guide)}>
@@ -41,9 +41,12 @@ function HomePage() {
             <button className='close_btn' onClick={() => setGuide(false)}><i className="bi bi-x-circle-fill"></i></button>
             <p><i className="bi bi-eye-fill text-primary"></i>: Xem cách viết hán tự</p>
             <p><i className="bi bi-pencil-fill text-warning"></i>: Viết hán tự</p>
-            <p><i className="bi bi-info-circle"></i>: Xem ví dụ liên quan</p>
+            <p><i className="bi bi-chat-square-dots-fill text-danger"></i>: Xem ví dụ liên quan</p>
             <p><i className="bi bi-clipboard-check text-success"></i>: Đánh dấu hán tự đã học</p>
             <p><i className="bi bi-bookmark-x text-danger"></i>: Đánh dấu hán tự cần bỏ qua</p>
+            <p><i className="bi bi-exclamation-circle"></i>: Ẩn, hiện pinyin</p>
+            <p><i className="bi bi-spellcheck"></i>: Ẩn, hiện hán tự</p>
+            <p><i className="bi bi-droplet-fill text-primary"></i>: Ẩn, hiện nghĩa hán tự</p>
             <p>🔊: Nghe phát âm</p>
             <p>Lưu ý: xóa dữ liệu web cũng sẽ xóa tất cả thiết lập trên trang web</p>
             <p className='text-danger text-center delete' onClick={handleReset}>Đặt lại các bài học {isResetting ? <i className="bi bi-trash-fill"></i> : <i className="bi bi-check-all text-success"></i>}</p>

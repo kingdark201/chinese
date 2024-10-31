@@ -4,6 +4,7 @@ import { ROUTERS } from "./utils/router";
 import HomePage from "./pages/home"
 import Hsk1 from "./pages/hsk1";
 import Hsk2 from "./pages/hsk2";
+import Hsk3 from "./pages/hsk3";
 
 
 
@@ -21,6 +22,11 @@ const RenderUserRouter = () => {
         {
             path: ROUTERS.HSK2,
             component: <Hsk2 />
+        }
+        ,
+        {
+            path: ROUTERS.HSK3,
+            component: <Hsk3 />
         }
     ];
 
