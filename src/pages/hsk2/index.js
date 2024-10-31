@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import Card from '../../components/Card';
-import hsk1 from '../../assets/hsk1.xlsx';
+import hsk2 from '../../assets/hsk2.xlsx';
 import './style.scss';
 import { fetchExcelData } from '../../utils/core';
 
-function Hsk1() {
+function Hsk2() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredData, setFilteredData] = useState([]);
@@ -26,7 +26,7 @@ function Hsk1() {
 
   useEffect(() => {
     const loadData = async () => {
-      const edata = await fetchExcelData(hsk1);
+      const edata = await fetchExcelData(hsk2);
       setData(edata);
       setFilteredData(edata);
     };
@@ -93,7 +93,7 @@ function Hsk1() {
 
   return (
     <div className='hsk1'>
-      <h6 className='text-center'>HSK 1</h6>
+      <h6 className='text-center'>HSK 2</h6>
       <input
         type="text"
         placeholder="Tìm kiếm từ vựng..."
@@ -137,4 +137,4 @@ function Hsk1() {
   );
 }
 
-export default Hsk1;
+export default Hsk2;

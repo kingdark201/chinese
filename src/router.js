@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { ROUTERS } from "./utils/router";
 import HomePage from "./pages/home"
 import Hsk1 from "./pages/hsk1";
+import Hsk2 from "./pages/hsk2";
 
 
 
@@ -15,6 +16,11 @@ const RenderUserRouter = () => {
         {
             path: ROUTERS.HSK1,
             component: <Hsk1 />
+        }
+        ,
+        {
+            path: ROUTERS.HSK2,
+            component: <Hsk2 />
         }
     ];
 

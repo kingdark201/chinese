@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.scss'
-import onReadHanzi from '../utils/core';
+import {onReadHanzi} from '../utils/core';
 
 function CardExample({ hanzi, hanziExp, pinyinExp, meanExp, closeBtn }) {
     return (

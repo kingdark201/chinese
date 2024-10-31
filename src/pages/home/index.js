@@ -21,7 +21,7 @@ function HomePage() {
         <Link to={ROUTERS.HSK1} className='box-hsk'>
           <h6 className='pt-1'>Từ vựng HSK1</h6>
         </Link>
-        <Link className='box-hsk'>
+        <Link to={ROUTERS.HSK2} className='box-hsk'>
           <h6 className='pt-1'>Từ vựng HSK2</h6>
         </Link>
         <Link className='box-hsk'>
