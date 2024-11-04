@@ -1,0 +1,40 @@
+.hsk1 {
+    width: 94%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    gap: 10px;
+
+    .search-input {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        padding: 5px 10px;
+        outline: none;
+        border: 1px solid #e3e3e3;
+    }
+
+    .status_hanzi, .status_pinyin, .status_mean{
+        background-color: transparent;
+        border: 1px solid #e3e3e3;
+        border-radius: 3px;
+        margin:0 2px;
+    }
+
+    .list_hsk1 {
+        width: 100%;
+        display: grid;
+        gap: 8px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: auto;
+        max-height: 80vh
+    }
+
+    .list_hsk1::-webkit-scrollbar {
+        display: none;
+    }
+}
