@@ -46,7 +46,8 @@ function HomePage() {
         </Link>
 
 
-        <p>Ghi nhớ tiếng Trung dễ dàng</p>
+        <p className='mota'>Ghi nhớ tiếng Trung dễ dàng</p>
+        <p className='author'>Design by Hoàng Duy</p>
       </div>
 
       {guide && (

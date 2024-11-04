@@ -22,12 +22,21 @@
         text-shadow: 2px 2px 2px rgb(170, 150, 76);
     }
 
-    p {
+    .mota {
         position: absolute;
-        bottom: 20px;
+        bottom: 35px;
         text-align: center;
         color: #000000;
         text-shadow: 2px 2px 2px #cf5d00;
+    }
+
+    .author{
+        position: absolute;
+        bottom: 5px;
+        text-align: center;
+        color: #161010;
+        text-shadow: 2px 2px 2px #fa892d; 
+        font-size: 14px;
     }
 
     .box_hsk_btn {
