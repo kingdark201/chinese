@@ -18,17 +18,31 @@ function HomePage() {
     <div>
       <div className='box' style={{ backgroundImage: `url(${bgImage})` }}>
         <h1 className='animate__animated animate__zoomInDown'>中文</h1>
-        <Link to={ROUTERS.HSK1} className='box-hsk'>
-          <h6 className='pt-1'>Từ vựng HSK1</h6>
-        </Link>
-        <Link to={ROUTERS.HSK2} className='box-hsk'>
-          <h6 className='pt-1'>Từ vựng HSK2</h6>
-        </Link>
-        <Link to={ROUTERS.HSK3} className='box-hsk'>
-          <h6 className='pt-1'>Từ vựng HSK3</h6>
-        </Link>
-        <Link className='box-hsk' onClick={() => setGuide(!guide)}>
-          <h6 className='pt-1'>Hướng dẫn</h6>
+
+        <div className='box_hsk_btn'>
+          <Link to={ROUTERS.HSK1} className='box-hsk'>
+            HSK1
+          </Link>
+          <Link to={ROUTERS.HSK2} className='box-hsk'>
+            HSK2
+          </Link>
+          <Link to={ROUTERS.HSK3} className='box-hsk'>
+            HSK3
+          </Link>
+        </div>
+        <div className='box_hsk_btn'>
+          <Link to={ROUTERS.HSK4} className='box-hsk'>
+            HSK4
+          </Link>
+          <Link to={ROUTERS.HSK5} className='box-hsk'>
+            HSK5
+          </Link>
+          <Link to={ROUTERS.HSK6} className='box-hsk'>
+            HSK6
+          </Link>
+        </div>
+        <Link className='box-hd' onClick={() => setGuide(!guide)}>
+          Hướng dẫn
         </Link>
 
 
